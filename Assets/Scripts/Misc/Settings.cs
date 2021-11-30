@@ -2,9 +2,13 @@
 
 public static class Settings
 {
+    // Player movement
+    public const float runningSpeed = 5.3333f;
+    public const float walkingSpeed = 2.6666f;
+
     // Player animation parameters
-    public static int inputX;
-    public static int inputY;
+    public static int xInput;
+    public static int yInput;
     public static int isWalking;
     public static int isRunning;
     public static int toolEffect;
@@ -35,8 +39,8 @@ public static class Settings
     static Settings()
     {
         // Player animation parameters
-        inputX = Animator.StringToHash("xInput");
-        inputY = Animator.StringToHash("yInput");
+        xInput = Animator.StringToHash("xInput");
+        yInput = Animator.StringToHash("yInput");
 
         isWalking = Animator.StringToHash("isWalking");
         isRunning = Animator.StringToHash("isRunning");

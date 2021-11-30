@@ -31,8 +31,8 @@ public class MovementAnimationParameterControl : MonoBehaviour
         bool isSwingingToolRight, bool isSwingingToolLeft, bool isSwingingToolUp, bool isSwingingToolDown,
         bool idleUp, bool idleDown, bool idleLeft, bool idleRight)
     {
-        animator.SetFloat(Settings.inputX, inputX);
-        animator.SetFloat(Settings.inputY, inputY);
+        animator.SetFloat(Settings.xInput, inputX);
+        animator.SetFloat(Settings.yInput, inputY);
         animator.SetBool(Settings.isWalking, isWalking);
         animator.SetBool(Settings.isRunning, isRunning);
 
