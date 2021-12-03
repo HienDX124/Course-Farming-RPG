@@ -36,8 +36,9 @@ public class Player : SingletonMonobehaviour<Player>
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody2D rgbody2D;
-
+#pragma warning disable 414
     private Direction playerDirection;
+#pragma warning restore 414
 
     private float movementSpeed;
 
