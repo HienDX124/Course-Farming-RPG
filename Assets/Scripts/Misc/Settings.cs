@@ -3,8 +3,8 @@
 public static class Settings
 {
     // Player movement
-    public const float runningSpeed = 5.3333f;
-    public const float walkingSpeed = 2.6666f;
+    public const float runningSpeed = 8f;
+    public const float walkingSpeed = 4f;
 
     // Player animation parameters
     public static int xInput;

@@ -419,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: 1.28, z: -17.8125}
+  m_LocalPosition: {x: -7.67, y: -7.12, z: -17.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 994378790}
@@ -677,7 +677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072516321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: 1.28, z: -17.8125}
+  m_LocalPosition: {x: -7.67, y: -7.12, z: -17.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27643661}
@@ -925,6 +925,7 @@ GameObject:
   - component: {fileID: 1779332242}
   - component: {fileID: 8454653336612159236}
   - component: {fileID: 1779332243}
+  - component: {fileID: 1779332244}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -940,7 +941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779332239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: 1.28, z: -7.8125}
+  m_LocalPosition: {x: -7.67, y: -7.12, z: -7.8125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1648160609}
@@ -982,8 +983,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779332239}
   m_Enabled: 1
-  m_SortingLayerID: 1659557031
-  m_SortingLayer: 1
+  m_SortingLayerID: 204628531
+  m_SortingLayer: 6
   m_SortingOrder: 0
 --- !u!114 &1779332243
 MonoBehaviour:
@@ -1024,6 +1025,32 @@ MonoBehaviour:
   idleDown: 0
   idleLeft: 0
   idleRight: 0
+--- !u!61 &1779332244
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779332239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02, y: 0.06}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.96, y: 0.13}
+  m_EdgeRadius: 0
 --- !u!1 &1801409206
 GameObject:
   m_ObjectHideFlags: 0
