@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [System.Serializable]
-public class ItemDetails : MonoBehaviour
+public class ItemDetails
 {
     public int itemCode;
     public ItemType itemType;
