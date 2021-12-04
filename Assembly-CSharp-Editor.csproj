@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Untilities\Property Drawers\Editor\ItemCodeDescriptionDrawer.cs" />
      <Compile Include="Assets\Tilemap\Custom Brush Scripts\Coordinate Brush\Editor\CoordinateBrush.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

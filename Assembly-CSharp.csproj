@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnimationTest.cs" />
      <Compile Include="Assets\Scripts\Scene\SwitchConfineBoundingShape.cs" />
+     <Compile Include="Assets\Scripts\Untilities\Property Drawers\ItemCodeDescriptionAttribute.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

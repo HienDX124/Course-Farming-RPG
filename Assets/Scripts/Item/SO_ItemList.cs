@@ -4,6 +4,6 @@ using UnityEngine;
 public class SO_ItemList : ScriptableObject
 {
     [SerializeField]
-    public ItemDetails[] itemDetails;
+    public List<ItemDetails> itemDetails;
 
 }
