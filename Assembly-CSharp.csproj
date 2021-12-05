@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\Item\Item.cs" />
      <Compile Include="Assets\Scripts\Item\ItemDetails.cs" />
+     <Compile Include="Assets\Scripts\Item\ItemNudge.cs" />
      <Compile Include="Assets\Scripts\Item\ObscuringItemFader.cs" />
      <Compile Include="Assets\Scripts\Item\SO_ItemList.cs" />
      <Compile Include="Assets\Scripts\Item\TriggerObscuringItemFader.cs" />
