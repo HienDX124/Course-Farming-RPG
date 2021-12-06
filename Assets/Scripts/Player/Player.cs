@@ -33,6 +33,8 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isPickingUp;
     private bool isPickingDown;
 
+    private Camera mainCamera;
+
     private ToolEffect toolEffect = ToolEffect.none;
 
     private Rigidbody2D rgbody2D;
@@ -49,6 +51,9 @@ public class Player : SingletonMonobehaviour<Player>
     {
         base.Awake();
         rgbody2D = GetComponent<Rigidbody2D>();
+
+        // get reference to main camera
+        mainCamera = Camera.main;
     }
 
     private void Update()
@@ -164,4 +169,12 @@ public class Player : SingletonMonobehaviour<Player>
             movementSpeed = Settings.runningSpeed;
         }
     }
+
+    public Vector3 GetPlayerViewportPosition()
+    {
+        // Vector3 viewport for player (0, 0) viewport bottom left, (1, 1) viewport top right
+        return mainCamera.WorldToViewportPoint(transform.position);
+    }
+
+
 }
