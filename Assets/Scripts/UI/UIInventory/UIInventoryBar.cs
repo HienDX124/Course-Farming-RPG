@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class UIInventoryBar : MonoBehaviour
 {
-    private RectTransform rectTransform;
+    [SerializeField] private Sprite blank16x16sprite = null;
+    [SerializeField] private UIInventorySlot[] inventorySlots = null;
 
+    private RectTransform rectTransform;
     private bool _isInventoryBarPositionBottom = true;
 
     public bool IsInventoryBarPositionBottom { get => _isInventoryBarPositionBottom; set => _isInventoryBarPositionBottom = value; }
@@ -16,11 +18,75 @@ public class UIInventoryBar : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
     }
 
+    private void OnDisable()
+    {
+        EventHandler.InventoryUpdateEvent -= InventoryUpdated;
+    }
+
+    private void OnEnable()
+    {
+        EventHandler.InventoryUpdateEvent += InventoryUpdated;
+    }
+
+    private void InventoryUpdated(InventoryLocation inventoryLocation, List<InventoryItem> inventoryList)
+    {
+        if (inventoryLocation == InventoryLocation.player)
+        {
+            ClearInventorySlots();
+
+
+
+            if (inventorySlots.Length > 0 && inventoryList.Count > 0)
+            {
+                //  Loop through inventory slots and update with corresponding inventory list item
+                for (int i = 0; i < inventorySlots.Length; i++)
+                {
+                    if (i < inventoryList.Count)
+                    {
+                        int itemCode = inventoryList[i].itemCode;
+
+                        ItemDetails itemDetails = InventoryManager.Instance.GetItemDetails(itemCode);
+
+                        if (itemDetails != null)
+                        {
+                            // Add images and details to inventory item slot
+                            inventorySlots[i].inventorySlotImage.sprite = itemDetails.itemSprite;
+                            inventorySlots[i].textMeshProUGUI.text = inventoryList[i].itemQuantity.ToString();
+                            inventorySlots[i].itemDetails = itemDetails;
+                            inventorySlots[i].itemQuantity = inventoryList[i].itemQuantity;
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    private void ClearInventorySlots()
+    {
+        if (inventorySlots.Length > 0)
+        {
+            // Loop through inventory slots and update with blank sprite
+            for (int i = 0; i < inventorySlots.Length; i++)
+            {
+                inventorySlots[i].inventorySlotImage.sprite = blank16x16sprite;
+                inventorySlots[i].textMeshProUGUI.text = "";
+                inventorySlots[i].itemDetails = null;
+                inventorySlots[i].itemQuantity = 0;
+            }
+        }
+    }
+
     private void Update()
     {
         // Switch inventory bar position depending on player position
         SwitchInventoryBarPosition();
     }
+
+
 
     private void SwitchInventoryBarPosition()
     {

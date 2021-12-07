@@ -16,7 +16,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     protected override void Awake()
     {
         base.Awake();
-
         // Create inventory list
         CreateInventoryList();
 
@@ -85,7 +84,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     {
         AddItem(inventoryLocation, item);
         Destroy(gameObjectToDelete);
-
     }
 
 
@@ -100,7 +98,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         inventoryItem.itemQuantity = 1;
         inventoryList.Add(inventoryItem);
 
-        DebugPrintInventoryList(inventoryList);
+        // DebugPrintInventoryList(inventoryList);
     }
 
     /// <sumary>
@@ -115,7 +113,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         inventoryItem.itemCode = itemCode;
         inventoryList[position] = inventoryItem;
 
-        DebugPrintInventoryList(inventoryList);
+        // DebugPrintInventoryList(inventoryList);
     }
 
     private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
