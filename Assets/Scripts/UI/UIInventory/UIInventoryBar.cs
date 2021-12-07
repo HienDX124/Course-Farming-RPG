@@ -7,6 +7,7 @@ public class UIInventoryBar : MonoBehaviour
 {
     [SerializeField] private Sprite blank16x16sprite = null;
     [SerializeField] private UIInventorySlot[] inventorySlots = null;
+    public GameObject inventoryBarDraggedItem;
 
     private RectTransform rectTransform;
     private bool _isInventoryBarPositionBottom = true;
@@ -33,9 +34,6 @@ public class UIInventoryBar : MonoBehaviour
         if (inventoryLocation == InventoryLocation.player)
         {
             ClearInventorySlots();
-
-
-
             if (inventorySlots.Length > 0 && inventoryList.Count > 0)
             {
                 //  Loop through inventory slots and update with corresponding inventory list item
