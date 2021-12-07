@@ -105,6 +105,8 @@ MonoBehaviour:
   inventorySlotImage: {fileID: 1855515263811808993}
   textMeshProUGUI: {fileID: 1855515264954415317}
   inventoryBar: {fileID: 0}
+  inventoryTextBoxPrefab: {fileID: 3950767493676199057, guid: cf0256274ceaf4c42a284b922003a856,
+    type: 3}
   itemDetails:
     itemCode: 0
     itemType: 0
@@ -121,6 +123,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 3327412032531055901, guid: 7cbfbe0852d3a304fb112eff737199e1,
     type: 3}
   itemQuantity: 0
+  slotNumber: 0
 --- !u!1 &1855515264954415323
 GameObject:
   m_ObjectHideFlags: 0

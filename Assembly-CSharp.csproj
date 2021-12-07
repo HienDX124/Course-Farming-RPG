@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Scene\SwitchConfineBoundingShape.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventoryBar.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventorySlot.cs" />
+     <Compile Include="Assets\Scripts\UI\UIInventory\UIInventoryTextBox.cs" />
      <Compile Include="Assets\Scripts\Untilities\Property Drawers\ItemCodeDescriptionAttribute.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

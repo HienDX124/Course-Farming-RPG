@@ -137,8 +137,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
             // Send event that inventory has been updated
             EventHandler.CallInventoryUpdateEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
         }
-
-
     }
 
     public void RemoveItem(InventoryLocation inventoryLocation, int itemCode)
@@ -202,6 +200,36 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         return -1;
     }
 
+    public string GetItemTypeDescription(ItemType itemType)
+    {
+        string itemTypeDescription;
+        switch (itemType)
+        {
+            case ItemType.Breaking_tool:
+                itemTypeDescription = Settings.BreakingTool;
+                break;
+            case ItemType.Chopping_tool:
+                itemTypeDescription = Settings.ChoppingTool;
+                break;
+            case ItemType.Hoeing_tool:
+                itemTypeDescription = Settings.HoeingTool;
+                break;
+            case ItemType.Reaping_tool:
+                itemTypeDescription = Settings.ReapingTool;
+                break;
+            case ItemType.Watering_tool:
+                itemTypeDescription = Settings.WateringTool;
+                break;
+            case ItemType.Collecting_tool:
+                itemTypeDescription = Settings.CollectingTool;
+                break;
+            default:
+                itemTypeDescription = itemType.ToString();
+                break;
+        }
+
+        return itemTypeDescription;
+    }
 
 
 
