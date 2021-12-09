@@ -49,8 +49,17 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         // Set item selected in inventory
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
-    }
 
+        if (itemDetails.canBeCarried == true)
+        {
+            // Show player carrying item
+            Player.Instance.ShowCarriedItem(itemDetails.itemCode);
+        }
+        else // Show player carrying nothing
+        {
+            Player.Instance.ClearCarriedItem();
+        }
+    }
 
     /// <sumary>
     /// Drops the item (if selected) at the current mouse position. Called by the DropItem event.
@@ -64,6 +73,10 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         // Set no item selected in inventory
         InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
+
+        // Clear player carrying item
+        Player.Instance.ClearCarriedItem();
+
     }
 
     private void DropSelectedItemAtMousePosition()
