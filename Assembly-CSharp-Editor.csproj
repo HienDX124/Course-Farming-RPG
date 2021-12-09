@@ -628,6 +628,10 @@
       <Project>{ee640238-0307-edfc-80b8-77b55c59785b}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{5c705c28-f955-0221-413c-b1a54c4da458}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Path.Editor.csproj">
       <Project>{406b7270-2782-d018-8bd0-a39c003ad44b}</Project>
       <Name>Unity.2D.Path.Editor</Name>
@@ -700,6 +704,10 @@
       <Project>{64834f05-0220-9721-4749-b6b480c0c5f4}</Project>
       <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{38db7bb1-bccc-9ff1-c09f-026b45e64d2c}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{554a3021-32f8-a4ba-7783-bce89e9ff8fe}</Project>
       <Name>Unity.2D.Common.Editor</Name>
@@ -711,14 +719,6 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{beda0898-9561-3e01-c66b-08b34bdd8f1f}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{5c705c28-f955-0221-413c-b1a54c4da458}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{38db7bb1-bccc-9ff1-c09f-026b45e64d2c}</Project>
-      <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
