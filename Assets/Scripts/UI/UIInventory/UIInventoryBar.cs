@@ -30,6 +30,82 @@ public class UIInventoryBar : MonoBehaviour
         EventHandler.InventoryUpdateEvent += InventoryUpdated;
     }
 
+    private void Update()
+    {
+        // Switch inventory bar position depending on player position
+        SwitchInventoryBarPosition();
+    }
+
+    /// <sumary>
+    /// Clear all highlights from the inventory bar
+    /// </sumary>
+
+    public void ClearHighlightOnInventorySlot()
+    {
+        if (inventorySlots.Length > 0)
+        {
+            // Loop through inventory slots and clear highlight sprites
+            for (int i = 0; i < inventorySlots.Length; i++)
+            {
+                if (inventorySlots[i].isSelected)
+                {
+                    inventorySlots[i].isSelected = false;
+                    inventorySlots[i].inventorySlotHightlight.color = new Color(0f, 0f, 0f, 0f);
+                    // Update inventory to show item as not selected
+                    InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
+                }
+            }
+        }
+    }
+
+    /// <sumary>
+    /// Set the selected highlight if set on all inventory item positions
+    /// </sumary>
+    public void SetHighlightedInventorySlots()
+    {
+        if (inventorySlots.Length > 0)
+        {
+            // Loop through inventory slots and clear highlight sprites
+            for (int i = 0; i < inventorySlots.Length; i++)
+            {
+                SetHighlightedInventorySlots(i);
+            }
+        }
+    }
+
+    /// <sumary>
+    /// Set the selected highlight if set on an inventory item for a given slot item position
+    /// </sumary>
+    public void SetHighlightedInventorySlots(int itemPosition)
+    {
+        if (inventorySlots.Length > 0 && inventorySlots[itemPosition].itemDetails != null)
+        {
+            if (inventorySlots[itemPosition].isSelected)
+            {
+                inventorySlots[itemPosition].inventorySlotHightlight.color = new Color(1f, 1f, 1f, 1f);
+
+                // Update inventory to show item as selected
+                InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, inventorySlots[itemPosition].itemDetails.itemCode);
+            }
+        }
+    }
+
+    private void ClearInventorySlots()
+    {
+        if (inventorySlots.Length > 0)
+        {
+            // Loop through inventory slots and update with blank sprite
+            for (int i = 0; i < inventorySlots.Length; i++)
+            {
+                inventorySlots[i].inventorySlotImage.sprite = blank16x16sprite;
+                inventorySlots[i].textMeshProUGUI.text = "";
+                inventorySlots[i].itemDetails = null;
+                inventorySlots[i].itemQuantity = 0;
+                SetHighlightedInventorySlots(i);
+            }
+        }
+    }
+
     private void InventoryUpdated(InventoryLocation inventoryLocation, List<InventoryItem> inventoryList)
     {
         if (inventoryLocation == InventoryLocation.player)
@@ -53,6 +129,7 @@ public class UIInventoryBar : MonoBehaviour
                             inventorySlots[i].textMeshProUGUI.text = inventoryList[i].itemQuantity.ToString();
                             inventorySlots[i].itemDetails = itemDetails;
                             inventorySlots[i].itemQuantity = inventoryList[i].itemQuantity;
+                            SetHighlightedInventorySlots(i);
                         }
                     }
                     else
@@ -63,29 +140,6 @@ public class UIInventoryBar : MonoBehaviour
             }
         }
     }
-
-    private void ClearInventorySlots()
-    {
-        if (inventorySlots.Length > 0)
-        {
-            // Loop through inventory slots and update with blank sprite
-            for (int i = 0; i < inventorySlots.Length; i++)
-            {
-                inventorySlots[i].inventorySlotImage.sprite = blank16x16sprite;
-                inventorySlots[i].textMeshProUGUI.text = "";
-                inventorySlots[i].itemDetails = null;
-                inventorySlots[i].itemQuantity = 0;
-            }
-        }
-    }
-
-    private void Update()
-    {
-        // Switch inventory bar position depending on player position
-        SwitchInventoryBarPosition();
-    }
-
-
 
     private void SwitchInventoryBarPosition()
     {

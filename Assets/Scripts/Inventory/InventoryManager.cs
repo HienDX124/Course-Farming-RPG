@@ -8,7 +8,10 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 
     private Dictionary<int, ItemDetails> itemDetailsDictionary;
 
+    private int[] selectedInventoryItem; // the index of the array is the inventory list, and the value is the item code
+
     public List<InventoryItem>[] inventoryLists;
+
     [HideInInspector] public int[] inventoryListCapacityIntArray; // The index of the array is the inventory list (from the InventoryLocation enum), and the valua is the capacity of that inventory list
 
     [SerializeField] private SO_ItemList itemList = null;
@@ -21,6 +24,13 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 
         // Create item details dictionary
         CreateItemDetailsDictionary();
+
+        // Initialise selected inventory item array
+        selectedInventoryItem = new int[(int)InventoryLocation.count];
+        for (int i = 0; i < selectedInventoryItem.Length; i++)
+        {
+            selectedInventoryItem[i] = -1;
+        }
     }
 
     private void CreateInventoryList()
@@ -139,6 +149,15 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         }
     }
 
+    /// <sumary>
+    /// Clear the selected inventory item for inventoryLocation
+    /// <sumary>
+    public void ClearSelectedInventoryItem(InventoryLocation inventoryLocation)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = -1;
+    }
+
+
     public void RemoveItem(InventoryLocation inventoryLocation, int itemCode)
     {
         List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
@@ -186,7 +205,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
     /// in the inventory list, or -1 if the item is not in the inventory
     /// </sumary>
 
-    private int FindItemInInventory(InventoryLocation inventoryLocation, int itemCode)
+    public int FindItemInInventory(InventoryLocation inventoryLocation, int itemCode)
     {
         List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
 
@@ -231,10 +250,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         return itemTypeDescription;
     }
 
-
-
-
-
     /// <sumary>
     /// Return the itemDetails (from the SO_itemList) for the itemCode, or null if the itemCode doesn't exist
     /// </sumary>
@@ -251,6 +266,14 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         {
             return null;
         }
+    }
+
+    /// <sumary>
+    /// Set the selected inventory item for inventoryLocation to itemCode
+    /// </sumary>
+    public void SetSelectedInventoryItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = itemCode;
     }
 
 
