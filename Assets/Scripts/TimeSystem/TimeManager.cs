@@ -74,6 +74,11 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
 
                             gameYear++;
 
+                            if (gameYear > 9999)
+                            {
+                                gameYear = 1;
+                            }
+
                             EventHandler.CallAdvanceGameYearEvent(gameYear, gameSeason, gameDay, gameDayOfWeek, gameHour, gameMinute, gameSecond);
                         }
                         EventHandler.CallAdvanceGameSeasonEvent(gameYear, gameSeason, gameDay, gameDayOfWeek, gameHour, gameMinute, gameSecond);
@@ -84,7 +89,7 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
                 EventHandler.CallAdvanceGameHourEvent(gameYear, gameSeason, gameDay, gameDayOfWeek, gameHour, gameMinute, gameSecond);
             }
             EventHandler.CallAdvanceGameMinuteEvent(gameYear, gameSeason, gameDay, gameDayOfWeek, gameHour, gameMinute, gameSecond);
-            Debug.Log("Game year: " + gameYear + "Game season: " + gameSeason + "Game day: " + gameDay + "Game hour: " + gameHour + "Game minute: " + gameMinute);
+            Debug.Log("DOW: " + gameDayOfWeek);
         }
         // Call to advance game second event would go here if required
     }
@@ -99,19 +104,44 @@ public class TimeManager : SingletonMonobehaviour<TimeManager>
             case 1:
                 return "Mon";
             case 2:
-                return "Mon";
+                return "Tue";
             case 3:
-                return "Mon";
+                return "Wed";
             case 4:
-                return "Mon";
+                return "Thus";
             case 5:
-                return "Mon";
+                return "Fri";
             case 6:
-                return "Mon";
+                return "Sat";
             case 0:
-                return "Mon";
+                return "Sun";
             default:
                 return "";
         }
     }
+
+    //TODO:Remove
+    /// <sumary>
+    /// Advance 1 game day
+    /// </sumary>
+    public void TestAdvanceGameDay()
+    {
+        for (int i = 0; i < 86400; i++)
+        {
+            UpdateGameSecond();
+        }
+    }
+
+    //TODO:Remove
+    /// <sumary>
+    /// Advance 1 game minute
+    /// </sumary>
+    public void TestAdvanceGameMinute()
+    {
+        for (int i = 0; i < 60; i++)
+        {
+            UpdateGameSecond();
+        }
+    }
+
 }
