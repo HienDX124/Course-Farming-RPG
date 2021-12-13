@@ -12,8 +12,8 @@ public static class Settings
     public static int playerMaximumInventoryCapacity = 48;
 
     // Player movement
-    public const float runningSpeed = 8f;
-    public const float walkingSpeed = 4f;
+    public const float runningSpeed = 12f;
+    public const float walkingSpeed = 6f;
 
     // Player animation parameters
     public static int xInput;

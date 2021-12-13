@@ -14,6 +14,11 @@ public class SwitchConfineBoundingShape : MonoBehaviour
         EventHandler.AfterSceneLoadEvent -= SwitchBoundingShape;
     }
 
+    private void Start()
+    {
+        // SwitchBoundingShape();
+    }
+
     /// <sumary>
     /// Switch the collider that cinemachine uses to define the edges of the screen
     /// </sumary>
@@ -26,7 +31,6 @@ public class SwitchConfineBoundingShape : MonoBehaviour
 
         //  Since the confiner bounds have changed need to call this to clear the cache
         cinemachineConfiner.InvalidatePathCache();
-
     }
 
 

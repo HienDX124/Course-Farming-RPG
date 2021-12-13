@@ -95,6 +95,9 @@ public class SceneControllerManager : SingletonMonobehaviour<SceneControllerMana
         // Start the first scene loading and wait for it to finish.
         yield return StartCoroutine(LoadSceneAndSetActive(startingSceneName.ToString()));
 
+        // Load some events for first scene
+        EventHandler.CallAfterSceneLoadEvent();
+
         // Once the scene is finished loading, start fading in.
         StartCoroutine(Fade(0f));
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public delegate void MovementDelegate(float inputX, float inputY, bool isWalking,
     bool isRunning, bool isIdle, bool isCarrying, ToolEffect toolEffect,
