@@ -52,6 +52,9 @@ public class SceneControllerManager : SingletonMonobehaviour<SceneControllerMana
         // Start fading to black and wait for it to finish before continuing.
         yield return StartCoroutine(Fade(1f));
 
+        // Store scene data
+        SaveLoadManager.Instance.StoreCurrentSceneData();
+
         // Set player position.
         Player.Instance.gameObject.transform.position = spawnPosition;
 
@@ -66,6 +69,9 @@ public class SceneControllerManager : SingletonMonobehaviour<SceneControllerMana
 
         // Call after scene load event
         EventHandler.CallAfterSceneLoadEvent();
+
+        // Restore new scene data
+        SaveLoadManager.Instance.RestoreCurrentSceneData();
 
         // Start fading back in and wait for it to finish before exiting the function.
         yield return StartCoroutine(Fade(0f));
@@ -95,8 +101,10 @@ public class SceneControllerManager : SingletonMonobehaviour<SceneControllerMana
         // Start the first scene loading and wait for it to finish.
         yield return StartCoroutine(LoadSceneAndSetActive(startingSceneName.ToString()));
 
-        // Load some events for first scene
+        // If this event has any subcribers, call it
         EventHandler.CallAfterSceneLoadEvent();
+
+        SaveLoadManager.Instance.RestoreCurrentSceneData();
 
         // Once the scene is finished loading, start fading in.
         StartCoroutine(Fade(0f));
