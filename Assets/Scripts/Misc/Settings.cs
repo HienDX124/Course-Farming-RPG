@@ -11,6 +11,9 @@ public static class Settings
     public static int playerInitialInventoryCapacity = 24;
     public static int playerMaximumInventoryCapacity = 48;
 
+    // Tilemap
+    public const float gridCellSize = 1f; // grid cell size in unity units
+
     // Player movement
     public const float runningSpeed = 12f;
     public const float walkingSpeed = 6f;

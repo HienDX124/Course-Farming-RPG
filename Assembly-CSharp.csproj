@@ -51,7 +51,9 @@
      <Compile Include="Assets\Scripts\Item\SO_ItemList.cs" />
      <Compile Include="Assets\Scripts\Item\TriggerObscuringItemFader.cs" />
      <Compile Include="Assets\Scripts\Map\GridCoordinate.cs" />
+     <Compile Include="Assets\Scripts\Map\GridPropertiesManager.cs" />
      <Compile Include="Assets\Scripts\Map\GridProperty.cs" />
+     <Compile Include="Assets\Scripts\Map\GridPropertyDetails.cs" />
      <Compile Include="Assets\Scripts\Map\SO_GridProperties.cs" />
      <Compile Include="Assets\Scripts\Map\TilemapGridProperties.cs" />
      <Compile Include="Assets\Scripts\Misc\Settings.cs" />

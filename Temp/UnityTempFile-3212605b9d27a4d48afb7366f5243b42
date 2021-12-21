@@ -323,7 +323,9 @@ Assets\Scripts\Item\ObscuringItemFader.cs
 Assets\Scripts\Item\SO_ItemList.cs
 Assets\Scripts\Item\TriggerObscuringItemFader.cs
 Assets\Scripts\Map\GridCoordinate.cs
+Assets\Scripts\Map\GridPropertiesManager1.cs
 Assets\Scripts\Map\GridProperty.cs
+Assets\Scripts\Map\GridPropertyDetails.cs
 Assets\Scripts\Map\SO_GridProperties.cs
 Assets\Scripts\Map\TilemapGridProperties.cs
 Assets\Scripts\Misc\Settings.cs
