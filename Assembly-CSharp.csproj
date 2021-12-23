@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Scene\SwitchConfineBoundingShape.cs" />
      <Compile Include="Assets\Scripts\TimeSystem\GameClock.cs" />
      <Compile Include="Assets\Scripts\TimeSystem\TimeManager.cs" />
+     <Compile Include="Assets\Scripts\UI\GridCursor.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventoryBar.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventorySlot.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventoryTextBox.cs" />

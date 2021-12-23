@@ -157,40 +157,6 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         selectedInventoryItem[(int)inventoryLocation] = -1;
     }
 
-
-    public void RemoveItem(InventoryLocation inventoryLocation, int itemCode)
-    {
-        List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
-
-        // Check if inventory already contains the item
-        int itemPosition = FindItemInInventory(inventoryLocation, itemCode);
-        if (itemPosition != -1)
-        {
-            RemoveItemAtPosition(inventoryList, itemCode, itemPosition);
-        }
-
-        // Send event that inventory has been updated
-        EventHandler.CallInventoryUpdateEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
-    }
-
-    private void RemoveItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
-    {
-        InventoryItem inventoryItem = new InventoryItem();
-
-        int quantity = inventoryList[position].itemQuantity - 1;
-
-        if (quantity > 0)
-        {
-            inventoryItem.itemQuantity = quantity;
-            inventoryItem.itemCode = itemCode;
-            inventoryList[position] = inventoryItem;
-        }
-        else
-        {
-            inventoryList.RemoveAt(position);
-        }
-    }
-
     private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
     {
         foreach (InventoryItem inventoryItem in inventoryList)
@@ -265,6 +231,64 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         else
         {
             return null;
+        }
+    }
+
+    /// <sumary>
+    /// Return the itemDetails (from the SO_ItemList) for the current selected item in the inventoryLocation, or null if an item isn't selected
+    /// <sumary>
+    public ItemDetails GetSelectedInventoryItemDetails(InventoryLocation inventoryLocation)
+    {
+        int itemCode = GetSelectedInventoryItem(inventoryLocation);
+
+        if (itemCode == -1)
+        {
+            return null;
+        }
+        else
+        {
+            return GetItemDetails(itemCode);
+        }
+    }
+
+    /// <sumary>
+    /// Get the selected item inventoryLocation - return itemCode or -1 if nothing is selected
+    /// </sumary>
+    private int GetSelectedInventoryItem(InventoryLocation inventoryLocation)
+    {
+        return selectedInventoryItem[(int)inventoryLocation];
+    }
+
+    public void RemoveItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
+
+        // Check if inventory already contains the item
+        int itemPosition = FindItemInInventory(inventoryLocation, itemCode);
+        if (itemPosition != -1)
+        {
+            RemoveItemAtPosition(inventoryList, itemCode, itemPosition);
+        }
+
+        // Send event that inventory has been updated
+        EventHandler.CallInventoryUpdateEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
+    }
+
+    private void RemoveItemAtPosition(List<InventoryItem> inventoryList, int itemCode, int position)
+    {
+        InventoryItem inventoryItem = new InventoryItem();
+
+        int quantity = inventoryList[position].itemQuantity - 1;
+
+        if (quantity > 0)
+        {
+            inventoryItem.itemQuantity = quantity;
+            inventoryItem.itemCode = itemCode;
+            inventoryList[position] = inventoryItem;
+        }
+        else
+        {
+            inventoryList.RemoveAt(position);
         }
     }
 
