@@ -69,6 +69,9 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         // Set highlighted inventory slots
         inventoryBar.SetHighlightedInventorySlots();
 
+        // Set use redius for cursors
+        gridCursor.ItemUseGridRadius = itemDetails.itemUseGridRadius;
+
         // If item requires a grid cursor then enable cursor
         if (itemDetails.itemUseGridRadius > 0)
         {

@@ -15,7 +15,7 @@ public class GridCursor : MonoBehaviour
     private bool _cursorPositionIsValid = false;
     public bool CursorPositionIsValid { get => _cursorPositionIsValid; set => _cursorPositionIsValid = value; }
 
-    private int _itemUseGridRadius = 2;
+    private int _itemUseGridRadius = 0;
     public int ItemUseGridRadius { get => _itemUseGridRadius; set => _itemUseGridRadius = value; }
 
     private ItemType _selectedItemType;
