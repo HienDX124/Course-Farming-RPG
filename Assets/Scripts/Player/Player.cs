@@ -373,6 +373,12 @@ public class Player : SingletonMonobehaviour<Player>
             gridPropertyDetails.daysSinceDug = 0;
         }
 
+        // Set grid property to dug
+        GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
+
+        // Display dug grid tiles
+        GridPropertiesManager.Instance.DisplayDugGround(gridPropertyDetails);
+
         // After animation pause
         yield return afterUseToolAnimationPause;
 
