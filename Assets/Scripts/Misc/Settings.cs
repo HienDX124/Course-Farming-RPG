@@ -19,7 +19,9 @@ public static class Settings
     public const float runningSpeed = 12f;
     public const float walkingSpeed = 6f;
     public static float useToolAnimationPause = 0.25f;
+    public static float liftToolAnimationPause = 0.4f;
     public static float afterUseToolAnimationPause = 0.2f;
+    public static float afterLiftToolAnimationPause = 0.4f;
 
     // Player animation parameters
     public static int xInput;
