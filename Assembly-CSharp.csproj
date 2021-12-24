@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Animation\SO_AnimationType.cs" />
      <Compile Include="Assets\Scripts\Enums\Enums.cs" />
      <Compile Include="Assets\Scripts\Events\EventHandler.cs" />
+     <Compile Include="Assets\Scripts\HelperClasses\HelperMethods.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\Item\Item.cs" />

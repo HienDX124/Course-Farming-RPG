@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GridCursor : MonoBehaviour
@@ -122,6 +123,14 @@ public class GridCursor : MonoBehaviour
                     }
                     break;
 
+                case ItemType.Hoeing_tool:
+                    if (!IsCursorValidForTool(gridPropertyDetails, itemDetails))
+                    {
+                        SetCursorToInvalid();
+                        return;
+                    }
+                    break;
+
                 case ItemType.none:
                     break;
 
@@ -172,6 +181,56 @@ public class GridCursor : MonoBehaviour
     {
         return gridPropertyDetails.canDropItem;
     }
+    /// <sumary>
+    // Sets the cursir as either valid or invalid for the tool for the target girdPropertyDetaiols. Returns true if valid or false if invalid
+    /// </sumary>
+    private bool IsCursorValidForTool(GridPropertyDetails gridPropertyDetails, ItemDetails itemDetails)
+    {
+        // Switch on tool
+        switch (itemDetails.itemType)
+        {
+            case ItemType.Hoeing_tool:
+                if (gridPropertyDetails.isDiggable == true && gridPropertyDetails.daysSinceDug == -1)
+                {
+                    #region Need to get any items at location so we can check if they are reapable
+                    // Get world position for cursor
+                    Vector3 cursorWorldPosition = new Vector3(GetWorldPositionForCursor().x + 0.5f, GetWorldPositionForCursor().y + 0.5f, 0f);
+
+                    // Get list of items at cursor location
+                    List<Item> itemList = new List<Item>();
+
+                    HelperMethods.GetComponentsAtBoxLocation<Item>(out itemList, cursorWorldPosition, Settings.cursorSize, 0f);
+                    #endregion
+
+                    // Loop through items found to see if any are reapable type - we are not going to let the player dig where there are reapable scene items
+                    bool foundReapable = false;
+
+                    foreach (Item item in itemList)
+                    {
+                        if (InventoryManager.Instance.GetItemDetails(item.ItemCode).itemType == ItemType.Reapable_scenary)
+                        {
+                            foundReapable = true;
+                            break;
+                        }
+                    }
+
+                    if (foundReapable)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            default:
+                return false;
+        }
+    }
 
     public void DisableCursor()
     {
@@ -202,4 +261,11 @@ public class GridCursor : MonoBehaviour
         Vector2 gridScreenPosition = mainCamera.WorldToScreenPoint(gridWorldPosition);
         return RectTransformUtility.PixelAdjustPoint(gridScreenPosition, cursorRectTransform, canvas);
     }
+
+    public Vector3 GetWorldPositionForCursor()
+    {
+        return grid.CellToWorld(GetGridPositionForCursor());
+    }
+
+
 }
