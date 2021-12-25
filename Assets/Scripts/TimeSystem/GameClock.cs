@@ -27,7 +27,7 @@ public class GameClock : MonoBehaviour
         gameMinute = gameMinute - (gameMinute % 10);
         string ampm = "";
         string minute;
-        if (gameHour >= 12)
+        if (gameHour > 12)
         {
             ampm = "pm";
         }
