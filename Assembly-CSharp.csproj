@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventorySlot.cs" />
      <Compile Include="Assets\Scripts\UI\UIInventory\UIInventoryTextBox.cs" />
      <Compile Include="Assets\Scripts\Untilities\Property Drawers\ItemCodeDescriptionAttribute.cs" />
+     <Compile Include="Assets\Scripts\VFX\PoolManager.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
