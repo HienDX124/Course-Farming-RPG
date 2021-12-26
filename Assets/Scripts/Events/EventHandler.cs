@@ -23,6 +23,17 @@ public static class EventHandler
         }
     }
 
+    // Harvest action effect event
+    public static event Action<Vector3, HarvestActionEffect> HarvestActionEffectEvent;
+
+    public static void CallHarvestActionEffectEvent(Vector3 effectPosition, HarvestActionEffect harvestActionEffect)
+    {
+        if (HarvestActionEffectEvent != null)
+        {
+            HarvestActionEffectEvent(effectPosition, harvestActionEffect);
+        }
+    }
+
     // Inventory Update Event
     public static event Action<InventoryLocation, List<InventoryItem>> InventoryUpdateEvent;
 
