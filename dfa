@@ -1,0 +1,89 @@
+[33mcommit 6d0dbe40928886fb6c26d5ada0d9634e802c4f01[m[33m ([m[1;36mHEAD -> [m[1;32mMoveOnLesson35[m[33m, [m[1;31mHienDX124/MoveOnLesson35[m[33m)[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Sat Dec 25 21:41:17 2021 +0700
+
+    Lesson 53: Using the scythe
+
+[33mcommit fe2d1059d448617bbc77e3845cd734f9f6642702[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Sat Dec 25 15:35:23 2021 +0700
+
+    Lesson 52: Implement non-grid based cursor
+
+[33mcommit 5c57b1277d21e97e92ce934500ff63d071c5ef61[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Sat Dec 25 10:24:30 2021 +0700
+
+    Lesson 51: Watering dug ground
+
+[33mcommit bcc987c99812f36994aee6ae84b899b91e258e6c[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Fri Dec 24 21:33:23 2021 +0700
+
+    Lesson 50: Using the watering can animation
+
+[33mcommit 45547c2acbfcb8dad1df44071782654ff891238f[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Fri Dec 24 18:14:18 2021 +0700
+
+    Lesson 49: Digging the ground
+
+[33mcommit 374b823af7f3523b202f198284536a261c2ce8de[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Fri Dec 24 12:31:41 2021 +0700
+
+    Lesson 48: Using the hoe animation
+
+[33mcommit 54cd68ec2d7de60ffe484c8fe926ad19f5f97f1a[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Fri Dec 24 10:45:08 2021 +0700
+
+    Small fix for lesson 46
+
+[33mcommit 8e1778cfa6888431903e9d1ecaac21a99d347a5c[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Thu Dec 23 23:51:19 2021 +0700
+
+    Lesson 47: Click drop items
+
+[33mcommit 0b2e75f53aae74184ef93fa48adb2a7849f4e373[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Thu Dec 23 16:10:27 2021 +0700
+
+    Lesson 46: Implement a grid cursor
+
+[33mcommit 6f1a94cbdfa57698abcc63929c798fbe6b376052[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Tue Dec 21 11:13:01 2021 +0700
+
+    Lesson 45: Only drop items where permitted
+
+[33mcommit c649935cc8f5e29efe02b1fdd5b6c3db79e24aab[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Fri Dec 17 10:02:07 2021 +0700
+
+    Lesson 44: Populate the tile map grid properties
+
+[33mcommit a1f6a52db40c573700fc55f554d4538f9aa382a6[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Thu Dec 16 11:19:23 2021 +0700
+
+    Lesson 42: Scene storing and restoring
+
+[33mcommit bea71078dd17132f19194e14ee48ad61d1f7eecc[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Wed Dec 15 23:46:26 2021 +0700
+
+    Lesson 40: Preserving scene state; Lesson 41: Create core scene state classes
+
+[33mcommit c6b50b2512358cd79b4d2df39116ea295dc98292[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Tue Dec 14 01:27:24 2021 +0700
+
+    Lesson 37: Create a new field scene; 38: Move between scenes; 39: Create a new farmhouse cabin scene; and some more fix
+
+[33mcommit 54d9d6ab587dcf38324a40eeb17d0ef2fa0f674b[m
+Author: HienDX124 <xuanhien2000678354@gmail.com>
+Date:   Mon Dec 13 16:07:20 2021 +0700
+
+    Lesson 36: Create a scene controller manager

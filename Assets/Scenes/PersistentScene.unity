@@ -1105,7 +1105,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.40193343, g: 0.5377358, b: 0.38300994, a: 0}
+  m_BackGroundColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1146,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -4.94, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 994378790}
@@ -2409,7 +2409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072516321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -4.94, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27643661}
@@ -2882,9 +2882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e3cf364940c7441ac21df1e3febbdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool:
-  - poolSize: 20
-    prefab: {fileID: 340639085132273899, guid: 9049d3b63e8add948b07d1dac8b58342, type: 3}
+  pool: []
   objectPoolTransform: {fileID: 1279683079}
 --- !u!4 &1279683079
 Transform:
@@ -4269,7 +4267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779332239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -4.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1648160609}
@@ -5213,6 +5211,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0be695988998b541b76a1fe05991ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canyonOakTreePrefab: {fileID: 340639085132273899, guid: 9049d3b63e8add948b07d1dac8b58342,
-    type: 3}
   equippedItemSpriteRenderer: {fileID: 1801409208}
