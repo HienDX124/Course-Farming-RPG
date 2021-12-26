@@ -247,6 +247,32 @@ public class Player : SingletonMonobehaviour<Player>
         }
     }
 
+
+    //TODO:Remove
+    /// <sumary>
+    /// Temp toutine for test input
+    /// </sumary>
+    private void PlayerTestInput()
+    {
+        // Trigger Advance Time
+        if (Input.GetKey(KeyCode.T))
+        {
+            TimeManager.Instance.TestAdvanceGameMinute();
+        }
+
+        // Trigger Advance Day
+        if (Input.GetKey(KeyCode.G))
+        {
+            TimeManager.Instance.TestAdvanceGameDay();
+        }
+
+        // Test scene unload / load
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
+        }
+    }
+
     private void ProcessPlayerClickInput(Vector3Int cursorGridPosition, Vector3Int playerGridPosition)
     {
         ResetMovement();
@@ -266,7 +292,7 @@ public class Player : SingletonMonobehaviour<Player>
                 case ItemType.Seed:
                     if (Input.GetMouseButtonDown(0))
                     {
-                        ProcessPlayerClickInputSeed(itemDetails);
+                        ProcessPlayerClickInputSeed(gridPropertyDetails, itemDetails);
                     }
                     break;
                 case ItemType.Commondity:
@@ -340,12 +366,29 @@ public class Player : SingletonMonobehaviour<Player>
         }
     }
 
-    private void ProcessPlayerClickInputSeed(ItemDetails itemDetails)
+    private void ProcessPlayerClickInputSeed(GridPropertyDetails gridPropertyDetails, ItemDetails itemDetails)
     {
-        if (itemDetails.canBeDroped && gridCursor.CursorPositionIsValid)
+        if (itemDetails.canBeDroped && gridCursor.CursorPositionIsValid && gridPropertyDetails.daysSinceDug > -1 && gridPropertyDetails.seedItemCode == -1)
+        {
+            PlantSeedAtCursor(gridPropertyDetails, itemDetails);
+        }
+        else if (itemDetails.canBeDroped && gridCursor.CursorPositionIsValid)
         {
             EventHandler.CallDropSelectedItemEvent();
         }
+    }
+
+    private void PlantSeedAtCursor(GridPropertyDetails gridPropertyDetails, ItemDetails itemDetails)
+    {
+        // Update grid properties with seed details
+        gridPropertyDetails.seedItemCode = itemDetails.itemCode;
+        gridPropertyDetails.growthDays = 0;
+
+        // Display planted crop at grid property details
+        GridPropertiesManager.Instance.DisplayPlantedCrops(gridPropertyDetails);
+
+        // Remove item from inventory
+        EventHandler.CallRemoveSelectedItemFromInventoryEvent();
     }
 
     private void ProcessPlayerClickInputComodity(ItemDetails itemDetails)
@@ -602,32 +645,6 @@ public class Player : SingletonMonobehaviour<Player>
         }
     }
 
-
-
-    //TODO:Remove
-    /// <sumary>
-    /// Temp toutine for test input
-    /// </sumary>
-    private void PlayerTestInput()
-    {
-        // Trigger Advance Time
-        if (Input.GetKey(KeyCode.T))
-        {
-            TimeManager.Instance.TestAdvanceGameMinute();
-        }
-
-        // Trigger Advance Day
-        if (Input.GetKey(KeyCode.G))
-        {
-            TimeManager.Instance.TestAdvanceGameDay();
-        }
-
-        // Test scene unload / load
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(), transform.position);
-        }
-    }
 
 
     private void ResetMovement()
