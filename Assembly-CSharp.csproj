@@ -40,6 +40,9 @@
      <Compile Include="Assets\Scripts\Animation\CharacterAttribute.cs" />
      <Compile Include="Assets\Scripts\Animation\MovementAnimationParameterControl.cs" />
      <Compile Include="Assets\Scripts\Animation\SO_AnimationType.cs" />
+     <Compile Include="Assets\Scripts\Crop\Crop.cs" />
+     <Compile Include="Assets\Scripts\Crop\CropDetails.cs" />
+     <Compile Include="Assets\Scripts\Crop\SO_CropDetailsList.cs" />
      <Compile Include="Assets\Scripts\Enums\Enums.cs" />
      <Compile Include="Assets\Scripts\Events\EventHandler.cs" />
      <Compile Include="Assets\Scripts\HelperClasses\HelperMethods.cs" />
