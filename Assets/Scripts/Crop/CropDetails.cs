@@ -36,7 +36,7 @@ public class CropDetails
     /// </sumary>
     public bool CanUseToolToHarvestCrop(int toolItemCode)
     {
-        if (requiredHarvestActionsForTool(toolItemCode) == -1)
+        if (RequiredHarvestActionsForTool(toolItemCode) == -1)
         {
             return false;
         }
@@ -46,7 +46,7 @@ public class CropDetails
         }
     }
 
-    public int requiredHarvestActionsForTool(int toolItemCode)
+    public int RequiredHarvestActionsForTool(int toolItemCode)
     {
         for (int i = 0; i < harvestToolItemCode.Length; i++)
         {

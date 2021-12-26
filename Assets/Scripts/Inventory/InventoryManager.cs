@@ -98,6 +98,29 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
         Destroy(gameObjectToDelete);
     }
 
+    /// <sumary>
+    /// Add an item tò type itemCode to the inventory list for the inventoryLocation
+    /// </sumary>
+    public void AddItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
+
+        // Check if inventory already contains the item
+        int itemPosition = FindItemInInventory(inventoryLocation, itemCode);
+
+        if (itemPosition != -1)
+        {
+            AddItemAtPosition(inventoryList, itemCode, itemPosition);
+        }
+        else
+        {
+            AddItemAtPosition(inventoryList, itemCode);
+        }
+
+        // Send event that inventory has been updated
+        EventHandler.CallInventoryUpdateEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
+    }
+
 
     /// <sumary>
     /// Add item to the end of the inventory
