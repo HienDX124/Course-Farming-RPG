@@ -19,7 +19,7 @@ public static class Settings
     public static float playerCentreYOffset = 0.875f;
 
     // Player movement
-    public const float runningSpeed = 12f;
+    public const float runningSpeed = 9f;
     public const float walkingSpeed = 6f;
     public static float useToolAnimationPause = 0.25f;
     public static float liftToolAnimationPause = 0.4f;

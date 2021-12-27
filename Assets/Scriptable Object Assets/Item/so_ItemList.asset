@@ -309,3 +309,78 @@ MonoBehaviour:
     canBeDroped: 0
     canBeEaten: 0
     canBeCarried: 0
+  - itemCode: 10024
+    itemType: 0
+    itemDescription: SugarBeetSeed
+    itemSprite: {fileID: 8558203965515749781, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: SugarBeet take 7 days to grow
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10025
+    itemType: 1
+    itemDescription: SugarBeet
+    itemSprite: {fileID: 21300000, guid: d31b9f3b40bb6b94e82e62eedacaccd1, type: 3}
+    itemLongDescription: SugarBeet is so delicious
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10026
+    itemType: 0
+    itemDescription: CauliFlowerSeed
+    itemSprite: {fileID: -5925890003656416073, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: CauliFlower take 7 days to grow
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10027
+    itemType: 1
+    itemDescription: Cauliflower
+    itemSprite: {fileID: 21300000, guid: 38fb2629456d6844380dd65517ec8c61, type: 3}
+    itemLongDescription: Cauliflower is not delicious
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10028
+    itemType: 0
+    itemDescription: AsparagusSeed
+    itemSprite: {fileID: 1654505907949758247, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10029
+    itemType: 1
+    itemDescription: Asparagus
+    itemSprite: {fileID: 21300000, guid: bb07bd45e6e02d4428efe2fdf1a81d64, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
