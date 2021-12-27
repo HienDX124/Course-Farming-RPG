@@ -5,9 +5,12 @@ public class Crop : MonoBehaviour
 {
     private int harvestActionCount = 0;
 
+    [Tooltip("This should be populated from child gameobject")]
+    [SerializeField] private SpriteRenderer cropHarvestedSpriteRenderer = null;
+
     [HideInInspector] public Vector2Int cropGridPosition;
 
-    public void ProcessToolAction(ItemDetails equippedItemDetails)
+    public void ProcessToolAction(ItemDetails equippedItemDetails, bool isToolRight, bool isToolLeft, bool isToolDown, bool isToolUp)
     {
         // Get grid property details
         GridPropertyDetails gridPropertyDetails = GridPropertiesManager.Instance.GetGridPropertyDetails(cropGridPosition.x, cropGridPosition.y);
@@ -31,8 +34,21 @@ public class Crop : MonoBehaviour
             return;
         }
 
-        // Increment harvest action count
-        harvestActionCount += 1;
+        // Get animator for crop if present
+        Animator animator = GetComponentInChildren<Animator>();
+
+        // Trigger tool animation
+        if (animator != null)
+        {
+            if (isToolRight || isToolUp)
+            {
+                animator.SetTrigger("usetoolright");
+            }
+            else if (isToolLeft || isToolDown)
+            {
+                animator.SetTrigger("usetoolleft");
+            }
+        }
 
         // Get required harvest actions for tool
         int requiredHarvestActions = cropDetails.RequiredHarvestActionsForTool(equippedItemDetails.itemCode);
@@ -41,23 +57,76 @@ public class Crop : MonoBehaviour
             return; // This tool can't be used to harvest this crop
         }
 
+        // Increment harvest action count
+        harvestActionCount += 1;
+
         // Check if required harvest actions made
         if (harvestActionCount >= requiredHarvestActions)
         {
-            HarvestCrop(cropDetails, gridPropertyDetails);
+            HarvestCrop(isToolRight, isToolUp, cropDetails, gridPropertyDetails, animator);
         }
     }
 
-    private void HarvestCrop(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails)
+    private void HarvestCrop(bool isUsingToolRight, bool isUsingToolUp, CropDetails cropDetails, GridPropertyDetails gridPropertyDetails, Animator animator)
     {
+        // Is there a harvested animation
+        if (cropDetails.isHarvestedAnimation && animator != null)
+        {
+            // If harvest sprite then add to sprite renderer
+            if (cropDetails.harvestedSprite != null)
+            {
+                // cropHarvestedSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+                // Debug.Log(cropHarvestedSpriteRenderer != null);
+                if (cropHarvestedSpriteRenderer != null)
+                {
+                    cropHarvestedSpriteRenderer.sprite = cropDetails.harvestedSprite;
+                }
+            }
+
+            if (isUsingToolRight || isUsingToolUp)
+            {
+                animator.SetTrigger("harvestright");
+            }
+            else
+            {
+                animator.SetTrigger("harvestleft");
+            }
+        }
+
+
         // Delete crop from grid properties
         gridPropertyDetails.seedItemCode = -1;
         gridPropertyDetails.growthDays = -1;
         gridPropertyDetails.daysSinceLastHarvest = -1;
         gridPropertyDetails.daysSinceWatered = -1;
 
+        // Should the crop be hidden before harvested animation
+        if (cropDetails.hideCropBeforeHarvestedAnimation)
+        {
+            GetComponentInChildren<SpriteRenderer>().enabled = false;
+        }
+
         GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
 
+        // Is there a harvested animation - Destroy this crop game object after animation completed
+        if (cropDetails.isHarvestedAnimation && animator != null)
+        {
+            StartCoroutine(ProcessHarvestActionsAfterAnimation(cropDetails, gridPropertyDetails, animator));
+        }
+        else
+        {
+            HarvestActions(cropDetails, gridPropertyDetails);
+        }
+
+    }
+
+    private IEnumerator ProcessHarvestActionsAfterAnimation(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails, Animator animator)
+    {
+        while (!animator.GetCurrentAnimatorStateInfo(0).IsName("Harvested"))
+        {
+            yield return null;
+        }
+        // Debug.Log(transform.Find("CropHarvestedSprite").transform.position.y);
         HarvestActions(cropDetails, gridPropertyDetails);
     }
 
