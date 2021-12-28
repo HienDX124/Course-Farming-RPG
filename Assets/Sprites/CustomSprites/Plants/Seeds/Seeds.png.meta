@@ -70,7 +70,7 @@ TextureImporter:
     second: Seeds_Kohlrabi
   - first:
       213: -3436909613127597744
-    second: Seeds_22
+    second: Seeds_BeanRoot
   - first:
       213: -548074648601894940
     second: Seeds_Berry
@@ -654,7 +654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seeds_22
+      name: Seeds_BeanRoot
       rect:
         serializedVersion: 2
         x: 64

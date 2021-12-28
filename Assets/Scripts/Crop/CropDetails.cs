@@ -8,7 +8,6 @@ public class CropDetails
     [ItemCodeDescription]
     public int seedItemCode;  // This is the item code for the corresponding see
     public int[] growthDays;    // Day growth for each stage
-    public int totalGrowthDays; // Total growth days
     public GameObject[] growthPrefab;   // Prefab to use when instantiating growth stages
     public Sprite[] growthSprite;   // Growth sprite
     public Season[] seasons;        // Growth season

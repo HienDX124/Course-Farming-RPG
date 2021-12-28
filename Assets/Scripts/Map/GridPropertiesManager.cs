@@ -114,15 +114,13 @@ public class GridPropertiesManager : SingletonMonobehaviour<GridPropertiesManage
                 // Instantiate crop prefab at grid location
                 int growthStages = cropDetails.growthDays.Length;
                 int currentGrowthStage = 0;
-                int daysCounter = cropDetails.totalGrowthDays;
                 for (int i = growthStages - 1; i >= 0; i--)
                 {
-                    if (gridPropertyDetails.growthDays >= daysCounter)
+                    if (gridPropertyDetails.growthDays >= cropDetails.growthDays[i])
                     {
                         currentGrowthStage = i;
                         break;
                     }
-                    daysCounter = daysCounter - cropDetails.growthDays[i];
                 }
                 cropPrefab = cropDetails.growthPrefab[currentGrowthStage];
 
