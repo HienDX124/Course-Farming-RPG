@@ -15,10 +15,10 @@
     runRight,
     runLeft,
 
-    useDown,
-    useUp,
-    useRight,
-    useLeft,
+    useToolDown,
+    useToolUp,
+    useToolRight,
+    useToolLeft,
 
     swingDown,
     swingUp,

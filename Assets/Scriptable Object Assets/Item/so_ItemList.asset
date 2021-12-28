@@ -83,7 +83,7 @@ MonoBehaviour:
     itemDescription: A Basic Axe
     itemSprite: {fileID: 21300010, guid: 853ac38383c680342ac7e688bf29b197, type: 3}
     itemLongDescription: A sharp, sturdy basic axe - great for chopping down trees
-    itemUseGridRadius: 0
+    itemUseGridRadius: 1
     itemUseRadius: 0
     isStartingItem: 1
     canPickedUp: 1
@@ -476,6 +476,181 @@ MonoBehaviour:
     itemType: 1
     itemDescription: BlueBerry
     itemSprite: {fileID: 21300000, guid: 018e433e7e388d241ad0a1cd140090ad, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10038
+    itemType: 0
+    itemDescription: CornSeed
+    itemSprite: {fileID: -6468488127690309402, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10039
+    itemType: 1
+    itemDescription: Corn
+    itemSprite: {fileID: 21300000, guid: 2fb8477df1ee4164880bf241e390c943, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10040
+    itemType: 0
+    itemDescription: CrystalBerrySeed
+    itemSprite: {fileID: -1792352952559590356, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10041
+    itemType: 1
+    itemDescription: CrystalBerry
+    itemSprite: {fileID: 21300000, guid: 1e57858d55051e94a8edaf35e59835de, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10042
+    itemType: 0
+    itemDescription: EggplantSeed
+    itemSprite: {fileID: 6384511163593996163, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10043
+    itemType: 1
+    itemDescription: Eggplant
+    itemSprite: {fileID: 21300000, guid: 8a4b739c4ee1420488190ce5eb4925fc, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10044
+    itemType: 0
+    itemDescription: GarlicSeed
+    itemSprite: {fileID: 2514004559234900711, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10045
+    itemType: 1
+    itemDescription: Garlic
+    itemSprite: {fileID: 21300000, guid: eb1ab16cfafc6c041a319e8d0bafc55a, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10046
+    itemType: 0
+    itemDescription: GoldenStarSeed
+    itemSprite: {fileID: -8679859532305885761, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10047
+    itemType: 1
+    itemDescription: GoldenStar
+    itemSprite: {fileID: 21300000, guid: db3ab6219a2f3314abb5d60a1352b1ef, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10048
+    itemType: 0
+    itemDescription: GourdSeed
+    itemSprite: {fileID: 1131535281375055967, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10049
+    itemType: 1
+    itemDescription: Gourd
+    itemSprite: {fileID: 21300000, guid: 3267b4ab702e63846b22f78128614c79, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10050
+    itemType: 0
+    itemDescription: GreenGrapeSeed
+    itemSprite: {fileID: 1213810069688714597, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10051
+    itemType: 1
+    itemDescription: GreenGrape
+    itemSprite: {fileID: 21300000, guid: bc16f0583548b794f97ae90458416587, type: 3}
     itemLongDescription: Add description
     itemUseGridRadius: 2
     itemUseRadius: 0
