@@ -144,6 +144,12 @@ public class Crop : MonoBehaviour
     {
         SpawnHarvestedItems(cropDetails);
 
+        // Does this crop transform into another crop
+        if (cropDetails.harvestTransformItemCode > 0)
+        {
+            CreatHarvestedTransformCrop(cropDetails, gridPropertyDetails);
+        }
+
         Destroy(gameObject);
 
     }
@@ -182,5 +188,19 @@ public class Crop : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void CreatHarvestedTransformCrop(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails)
+    {
+        // Update crop in grid properties
+        gridPropertyDetails.seedItemCode = cropDetails.harvestTransformItemCode;
+        gridPropertyDetails.growthDays = 0;
+        gridPropertyDetails.daysSinceLastHarvest = -1;
+        gridPropertyDetails.daysSinceWatered = -1;
+
+        GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
+
+        // Display planted crop
+        GridPropertiesManager.Instance.DisplayPlantedCrop(gridPropertyDetails);
     }
 }

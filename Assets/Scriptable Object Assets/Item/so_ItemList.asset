@@ -859,3 +859,153 @@ MonoBehaviour:
     canBeDroped: 1
     canBeEaten: 0
     canBeCarried: 1
+  - itemCode: 10068
+    itemType: 0
+    itemDescription: RedPotatoSeed
+    itemSprite: {fileID: 3507544636904330049, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10069
+    itemType: 1
+    itemDescription: RedPotato
+    itemSprite: {fileID: 21300000, guid: 864b262de1bdfc6469b9c8cc730f72bd, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10070
+    itemType: 0
+    itemDescription: RedRadishSeed
+    itemSprite: {fileID: -9027899065660729926, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10071
+    itemType: 1
+    itemDescription: RedRadish
+    itemSprite: {fileID: 21300000, guid: f5d47aa0ecefa454b99a39c903e465cf, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10072
+    itemType: 0
+    itemDescription: SpinachSeed
+    itemSprite: {fileID: 3719439311941371724, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10073
+    itemType: 1
+    itemDescription: Spinach
+    itemSprite: {fileID: 21300000, guid: 3f8e218862d17034fabc6c04f2b6f792, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10074
+    itemType: 0
+    itemDescription: StrawBerrySeed
+    itemSprite: {fileID: -2445447941370221164, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10075
+    itemType: 1
+    itemDescription: StrawBerry
+    itemSprite: {fileID: 21300000, guid: 89a3d878ef0fe784088f9883ae348390, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10076
+    itemType: 0
+    itemDescription: TomatoSeed
+    itemSprite: {fileID: -6266224706370420965, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10077
+    itemType: 1
+    itemDescription: Tomato
+    itemSprite: {fileID: 21300000, guid: 759c0c427e5b70a4eb01e5fbd3911586, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10078
+    itemType: 0
+    itemDescription: WheatSeed
+    itemSprite: {fileID: -558060469666319770, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10079
+    itemType: 1
+    itemDescription: Wheat
+    itemSprite: {fileID: 21300000, guid: 6030bb138bc2d954eaef6fdaa746381b, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1

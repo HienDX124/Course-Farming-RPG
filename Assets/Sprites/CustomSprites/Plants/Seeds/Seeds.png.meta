@@ -55,7 +55,7 @@ TextureImporter:
     second: Seeds_Corn
   - first:
       213: -2445447941370221164
-    second: Seeds_17
+    second: Seeds_StrawBerry
   - first:
       213: 6384511163593996163
     second: Seeds_Eggplant
@@ -549,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seeds_17
+      name: Seeds_StrawBerry
       rect:
         serializedVersion: 2
         x: 128
