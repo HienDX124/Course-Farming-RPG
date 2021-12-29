@@ -659,3 +659,203 @@ MonoBehaviour:
     canBeDroped: 1
     canBeEaten: 0
     canBeCarried: 1
+  - itemCode: 10052
+    itemType: 0
+    itemDescription: KohlrabiSeed
+    itemSprite: {fileID: 1006483790486593286, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10053
+    itemType: 1
+    itemDescription: Kohlrabi
+    itemSprite: {fileID: 21300000, guid: 3f173afe5dca18b43b6a02a7cfe3c4c4, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10054
+    itemType: 0
+    itemDescription: PotatoSeed
+    itemSprite: {fileID: -3901715911805076996, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10055
+    itemType: 1
+    itemDescription: Potato
+    itemSprite: {fileID: 21300000, guid: 334d7d10d4a0895428e597112112ffc1, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10056
+    itemType: 0
+    itemDescription: PumpkinSeed
+    itemSprite: {fileID: 5832468968528691319, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10057
+    itemType: 1
+    itemDescription: Pumpkin
+    itemSprite: {fileID: 21300000, guid: 21ad8ff8bd93aa0479f19339b85c66de, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10058
+    itemType: 0
+    itemDescription: PurpleAmaranthSeed
+    itemSprite: {fileID: -6549883727430059568, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10059
+    itemType: 1
+    itemDescription: PurpleAmaranth
+    itemSprite: {fileID: 21300000, guid: 338e768b17ecd714f9ded236fab64e5b, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10060
+    itemType: 0
+    itemDescription: PurpleCabbageSeed
+    itemSprite: {fileID: 1044963792027144558, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10061
+    itemType: 1
+    itemDescription: PurpleCabbage
+    itemSprite: {fileID: 21300000, guid: 90d54faa852c318429948ca683cf8f17, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10062
+    itemType: 0
+    itemDescription: PurpleGrape
+    itemSprite: {fileID: 4475804934708105845, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10063
+    itemType: 1
+    itemDescription: PurpleGrape
+    itemSprite: {fileID: 21300000, guid: 07a5d42d0b303c547bfb4d9040d1c6c8, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10064
+    itemType: 0
+    itemDescription: RedOnionSeed
+    itemSprite: {fileID: -5089623308421081650, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10065
+    itemType: 1
+    itemDescription: RedOnion
+    itemSprite: {fileID: 21300000, guid: f80201fcebc8e9f4cb7695a15be5ba25, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10066
+    itemType: 0
+    itemDescription: RedPeperSeed
+    itemSprite: {fileID: 4955485167201965654, guid: c704825f95728594094ebb88aafa6401,
+      type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10067
+    itemType: 1
+    itemDescription: RedPeper
+    itemSprite: {fileID: 21300000, guid: 0aa6e23d01f40db498a15878f8978426, type: 3}
+    itemLongDescription: Add description
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canPickedUp: 1
+    canBeDroped: 1
+    canBeEaten: 0
+    canBeCarried: 1

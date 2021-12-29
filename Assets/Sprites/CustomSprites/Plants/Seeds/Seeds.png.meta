@@ -37,7 +37,7 @@ TextureImporter:
     second: Seeds_BlueBerry
   - first:
       213: 4955485167201965654
-    second: Seeds_RedPepper
+    second: Seeds_RedPeper
   - first:
       213: -558060469666319770
     second: Seeds_Wheat
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seeds_RedPepper
+      name: Seeds_RedPeper
       rect:
         serializedVersion: 2
         x: 32

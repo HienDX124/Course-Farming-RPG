@@ -49,7 +49,6 @@ public class PoolManager : SingletonMonobehaviour<PoolManager>
     public GameObject ReuseObject(GameObject prefab, Vector3 position, Quaternion rotation)
     {
         int poolKey = prefab.GetInstanceID();
-
         if (poolDictionary.ContainsKey(poolKey))
         {
             // Get object from pool queue

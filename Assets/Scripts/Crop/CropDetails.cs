@@ -17,7 +17,7 @@ public class CropDetails
     public bool hideCropBeforeHarvestedAnimation;   // If the crop should be disabled before harvested animation
     public bool disableCropCollidersBeforeHarvestedAnimation;   // If colliders on crop should be disabled to avoid the harvested animation effecting any other game object
     public bool isHarvestedAnimation;   // true if harvested animation to be played on final growth stage prefab
-    public bool isHarvestActionAtPlayerPosition = false;    // Flag to determine whether there is a harvest action effect
+    public bool isHarvestActionEffect = false;    // Flag to determine whether there is a harvest action effect
     public bool spawnCropProducedAtPlayerPosition;
     public HarvestActionEffect harvestActionEffect; // The harvest action effect for the crop
 
