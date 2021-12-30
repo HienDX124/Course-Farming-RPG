@@ -128,7 +128,7 @@ MonoBehaviour:
     canBeEaten: 0
     canBeCarried: 1
   - itemCode: 10009
-    itemType: 1
+    itemType: 0
     itemDescription: Blue Spruce Pine Cone
     itemSprite: {fileID: 21300000, guid: 5eb84bf51d351da428f95a1296f6a397, type: 3}
     itemLongDescription: Pine cones are packed with seeds to grow new fir trees

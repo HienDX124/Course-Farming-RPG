@@ -1146,7 +1146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.99, y: -7.81, z: -10}
+  m_LocalPosition: {x: -8.56, y: -1.63, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 994378790}
@@ -2426,7 +2426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072516321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.99, y: -7.81, z: -10}
+  m_LocalPosition: {x: -8.56, y: -1.63, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27643661}
@@ -2908,6 +2908,9 @@ MonoBehaviour:
       type: 3}
   - poolSize: 5
     prefab: {fileID: 1422801882041588480, guid: 0302667d61c499f41bc91f00be61416b,
+      type: 3}
+  - poolSize: 5
+    prefab: {fileID: 7472401262548553471, guid: ae32a66b21f9408458aa4898c20f885d,
       type: 3}
   objectPoolTransform: {fileID: 1279683079}
 --- !u!4 &1279683079
@@ -4293,7 +4296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779332239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.99, y: -7.81, z: 0}
+  m_LocalPosition: {x: -8.56, y: -1.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1648160609}
@@ -4635,6 +4638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deciduousLeavesFallingPrefab: {fileID: 7472401262548553471, guid: a962f617ee49fbe4aab04ebcb8d16681,
+    type: 3}
+  pineConesFallingPrefab: {fileID: 7472401262548553471, guid: ae32a66b21f9408458aa4898c20f885d,
     type: 3}
   choppingTreeTrunkPrefab: {fileID: 1422801882041588480, guid: 0302667d61c499f41bc91f00be61416b,
     type: 3}
