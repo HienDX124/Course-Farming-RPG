@@ -147,7 +147,7 @@ public class Crop : MonoBehaviour
         // Does this crop transform into another crop
         if (cropDetails.harvestTransformItemCode > 0)
         {
-            CreatHarvestedTransformCrop(cropDetails, gridPropertyDetails);
+            CreateHarvestedTransformCrop(cropDetails, gridPropertyDetails);
         }
 
         Destroy(gameObject);
@@ -190,7 +190,7 @@ public class Crop : MonoBehaviour
         }
     }
 
-    private void CreatHarvestedTransformCrop(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails)
+    private void CreateHarvestedTransformCrop(CropDetails cropDetails, GridPropertyDetails gridPropertyDetails)
     {
         // Update crop in grid properties
         gridPropertyDetails.seedItemCode = cropDetails.harvestTransformItemCode;

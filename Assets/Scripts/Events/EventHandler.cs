@@ -56,6 +56,17 @@ public static class EventHandler
         }
     }
 
+    // Instantiate crop prefabs
+    public static event Action InstantiateCropPrefabsEvent;
+
+    public static void CallInstantiateCropPrefabsEvent()
+    {
+        if (InstantiateCropPrefabsEvent != null)
+        {
+            InstantiateCropPrefabsEvent();
+        }
+    }
+
     // MovementEvent
     public static event MovementDelegate MovementEvent;
 

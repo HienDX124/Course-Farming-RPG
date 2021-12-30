@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Animation\SO_AnimationType.cs" />
      <Compile Include="Assets\Scripts\Crop\Crop.cs" />
      <Compile Include="Assets\Scripts\Crop\CropDetails.cs" />
+     <Compile Include="Assets\Scripts\Crop\CropInstantiator.cs" />
      <Compile Include="Assets\Scripts\Crop\SO_CropDetailsList.cs" />
      <Compile Include="Assets\Scripts\Enums\Enums.cs" />
      <Compile Include="Assets\Scripts\Events\EventHandler.cs" />
