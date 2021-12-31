@@ -5,7 +5,6 @@ using UnityEngine;
 /// <sumary>
 /// Attach to a crop prefab to set the values in the grid property dictionary
 /// </sumary>
-
 public class CropInstantiator : MonoBehaviour
 {
     private Grid grid;
@@ -57,7 +56,7 @@ public class CropInstantiator : MonoBehaviour
             gridPropertyDetails.seedItemCode = seedItemCode;
             gridPropertyDetails.growthDays = growthDays;
 
-            GridPropertiesManager.Instance.SetGridPropertyDetails(gridPropertyDetails.gridX, gridPropertyDetails.gridY, gridPropertyDetails);
+            GridPropertiesManager.Instance.SetGridPropertyDetails(cropGridPosition.x, cropGridPosition.y, gridPropertyDetails);
         }
 
     }

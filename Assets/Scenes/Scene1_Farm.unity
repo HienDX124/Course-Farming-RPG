@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanyonOak_5Days
       objectReference: {fileID: 0}
+    - target: {fileID: 994095117901921772, guid: 2da01801a504fee4cb8f18291ee9a523,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 994095117901921774, guid: 2da01801a504fee4cb8f18291ee9a523,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -407,6 +412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971348387419618982, guid: d4d3ce2522305e84299776cded6c6a98,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8971348387419618985, guid: d4d3ce2522305e84299776cded6c6a98,
         type: 3}
@@ -6268,6 +6278,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6699828843504529742, guid: 1f2a7dfa0eab78c4eb26dbd6c6804b47,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f2a7dfa0eab78c4eb26dbd6c6804b47, type: 3}
 --- !u!1001 &275995549
@@ -6331,6 +6346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752385502528828851, guid: da7b2ccaab3a90e4fb2b9e9550b2e6d2,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6752385502528828860, guid: da7b2ccaab3a90e4fb2b9e9550b2e6d2,
         type: 3}
@@ -77388,6 +77408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueSpruce_20Days
       objectReference: {fileID: 0}
+    - target: {fileID: 6050999966093095821, guid: 18ada69149d8fe7408dcce701ae4ada8,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6050999966093095823, guid: 18ada69149d8fe7408dcce701ae4ada8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -84232,6 +84257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanyonOak_20Days
       objectReference: {fileID: 0}
+    - target: {fileID: 6942019813812284008, guid: 4d83095ed6c0e6143a58a74146303894,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6942019813812284010, guid: 4d83095ed6c0e6143a58a74146303894,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -84240,7 +84270,7 @@ PrefabInstance:
     - target: {fileID: 6942019813812284010, guid: 4d83095ed6c0e6143a58a74146303894,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.3401575
+      value: -11.06
       objectReference: {fileID: 0}
     - target: {fileID: 6942019813812284010, guid: 4d83095ed6c0e6143a58a74146303894,
         type: 3}
@@ -110099,6 +110129,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170873991}
     m_Modifications:
+    - target: {fileID: 2221359653306255744, guid: 44c55a27c5c8258409bc5077b63488dc,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2221359653306255746, guid: 44c55a27c5c8258409bc5077b63488dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -110243,6 +110278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 170873991}
     m_Modifications:
+    - target: {fileID: 3191439063059918164, guid: ccc27b6849cdde74782e1be46ee534ed,
+        type: 3}
+      propertyPath: daysSinceDug
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3191439063059918166, guid: ccc27b6849cdde74782e1be46ee534ed,
         type: 3}
       propertyPath: m_LocalPosition.x
