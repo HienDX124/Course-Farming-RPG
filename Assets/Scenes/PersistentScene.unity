@@ -2914,6 +2914,9 @@ MonoBehaviour:
     prefab: {fileID: 1422801882041588480, guid: 0302667d61c499f41bc91f00be61416b,
       type: 3}
   - poolSize: 5
+    prefab: {fileID: 5314328515506609506, guid: 8f1b8d2eead7034418cb4beedf79b076,
+      type: 3}
+  - poolSize: 5
     prefab: {fileID: 7472401262548553471, guid: ae32a66b21f9408458aa4898c20f885d,
       type: 3}
   objectPoolTransform: {fileID: 1279683079}
@@ -4646,6 +4649,8 @@ MonoBehaviour:
   pineConesFallingPrefab: {fileID: 7472401262548553471, guid: ae32a66b21f9408458aa4898c20f885d,
     type: 3}
   choppingTreeTrunkPrefab: {fileID: 1422801882041588480, guid: 0302667d61c499f41bc91f00be61416b,
+    type: 3}
+  breakingStonePrefab: {fileID: 5314328515506609506, guid: 8f1b8d2eead7034418cb4beedf79b076,
     type: 3}
   reapingPrefab: {fileID: 4506068620129406228, guid: e651efd27a8e8a148823ecd9cf4969bf,
     type: 3}
