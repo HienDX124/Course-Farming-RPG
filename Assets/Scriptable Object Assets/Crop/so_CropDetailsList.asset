@@ -1084,7 +1084,7 @@ MonoBehaviour:
     spawnCropProducedAtPlayerPosition: 1
     harvestActionEffect: 3
     harvestToolItemCode: 1d270000
-    requiredHarvestActions: 01000000
+    requiredHarvestActions: 02000000
     cropProducedItemCode: 1f270000
     cropProducedMinQuantity: 01000000
     cropProducedMaxQuantity: 03000000

@@ -1973,6 +1973,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c18d9dbaf8da08548a69e3c8039e0237, type: 2}
   - {fileID: 11400000, guid: 2775373e579b7d14b9c136fb4a1fc9ff, type: 2}
   - {fileID: 11400000, guid: 7356c7b39d5239447806561e82defdd2, type: 2}
+  - {fileID: 11400000, guid: a02e67ba931929c419e83147df723631, type: 2}
+  - {fileID: 11400000, guid: b6ebbb274a1eae240ad89eb6d3aee3e1, type: 2}
+  - {fileID: 11400000, guid: 6d2f4feecc8002b4fbeeab92b42e51f3, type: 2}
+  - {fileID: 11400000, guid: f77d925ce4caa374ca8c0b482bb4e112, type: 2}
 --- !u!224 &937077834 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1855515263811808999, guid: 179cf0148ab234f4f9426beec919e637,
